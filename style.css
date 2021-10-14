@@ -1,31 +1,91 @@
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body {
-    margin: 1%;
-    padding: 2%;
-    background-color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000;
 }
 
-main .dot {
-    height: 25px;
-    width: 25px;
-    background-color: rgb(7, 7, 7);
-    border-radius: 50%;
-    display: inline-block;
-}
 
 nav {
-    top: 1%;
-    border-bottom: 1%;
+    top: 0%;
+    border-bottom: 2%;
     text-align: left;
 }
 
-nav ul {
+nav ul{
     text-align: float-left;
     list-style-type: square;
 }
+
+.loader {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(57, 15, 73);
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    overflow: hidden;
+}
+
+    .loader:before {
+        content: "";
+        position: absolute;
+        top:-150%;
+        left: -50%;
+        width: 300px;
+        height:220px;
+        border-radius: 40%;
+        background-color: #111;
+        opacity: 0.8;
+        animation:animate 12s linear infinite;
+}
+    @keyframes animate {
+     0% 
+}
+    {
+    transform:rotate(0deg)
+    }
+{
+    100%
+} 
+    {
+        transform:rotate(360deg)
+    }
+
+    .loader:after {
+        content: "";
+        position: absolute;
+        top:-150%;
+        left: -50%;
+        width: 300px;
+        height:220px;
+        border-radius: 40%;
+        background-color: #111;
+        opacity: 0.9;
+        animation:animate2 12s linear infinite;
+    }
+    @keyframes animate2
+    {
+         0% 
+    }
+        {
+            transform:rotate(360deg)
+        }
+        {
+            100%
+        } 
+    
+        {
+            transform:rotate(0deg)
+        }
+
 
 #buttons li {
     float: left;
@@ -36,7 +96,9 @@ nav ul {
     width: 150px;
     line-height: 60px;
 }
+12moonPhases(){
 
+}
 #buttons li a {
     text-decoration: none;
     color: #FFFFFF;
@@ -45,6 +107,19 @@ nav ul {
 
 #buttons li a:hover {
     text-decoration: none;
-    color: #4e3a23;
+    color: #201407;
     background-color: #ce9b2c;
 }
+
+footer {
+    background-color: rgb(32, 19, 4);
+    position: relative;
+    box-sizing: content-box;
+    box-shadow: #ad8f55;
+    max-height: fit-content;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: auto;
+    border-radius: 0%;
+}
+
