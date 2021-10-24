@@ -6,10 +6,9 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
     min-height: 100vh;
-    background: #000;
+    background: rgb(46, 16, 16);
+    color: tan;
 }
 
 
